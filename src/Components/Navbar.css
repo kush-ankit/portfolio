@@ -1,0 +1,29 @@
+#logoimage {
+    animation: shake 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: scale(2) rotate(10deg);
+      }
+    
+      20%, 25% {
+        transform: scale(1.5) rotate(0);
+      }
+    
+      45%, 50% {
+        transform: scale(2) rotate(-10deg);
+      }
+    
+      70%, 75% {
+        transform: scale(1.5) rotate(0);
+      }
+    
+      95%, 100% {
+        transform: scale(2) rotate(10deg);
+      }
+}
+
+
+
