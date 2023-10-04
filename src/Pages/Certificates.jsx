@@ -1,7 +1,7 @@
 
 function Cetificates() {
   return (
-    <div>
+    <div name='Certificate' className="h-[1000px] bg-[#FFD500]">
       Certificates
     </div>
   )

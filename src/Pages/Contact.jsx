@@ -1,7 +1,7 @@
 
 function Contact() {
   return (
-    <div>
+    <div name='Contact' className="bg-white">
       Contact
     </div>
   )

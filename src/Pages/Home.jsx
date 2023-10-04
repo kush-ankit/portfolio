@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import './Home.css'
 import { BsGithub, BsLinkedin, BsInstagram } from 'react-icons/bs';
 
 
 function Home() {
     return (
-        <div className="bg-white w-full h-full">
+        <div name='Home' className="bg-white w-full h-full">
             <div className="md:flex md:flex-row-reverse " >
                 <div className="md:w-[50%] h-[30rem] md:h-auto flex justify-center items-center">
                     <img src="https://i.ibb.co/Gn8yYS5/picofme-3.png" alt="myimg" className="m-auto md:w-auto w-[80%] md:h-[40rem]" />
@@ -15,14 +15,14 @@ function Home() {
                     <div className='space-y-8'>
                         <div >
                             <div className="text-[#FF8C5B] text-lg font-bold">Namaste, I&apos;m</div>
-                            <div className="text-black text-5xl font-bold">
+                            <div className="text-black text-[70px] font-bold">
                                 Ankit Kushwaha
                             </div>
                             <div className="text-[#FF8C5B] font-bold text-lg">Full Stack Web Developer</div>
                             <div className="text-sm text-gray-500 hidden md:flex">A passionate computer science student eager to innovate <br /> in web development and embrace cutting-edge technologies <br /> for  user-centric  solutions at the forefront of digital advancements.</div>
                         </div>
                         <div className='flex gap-8 items-baseline'>
-                            <Link id='button' to={'/contact'}> Contact me </Link>
+                            <Link id='button' to="Contact" smooth duration={1500} className='cursor-pointer'> Contact me </Link>
                             <button className='button'> Get Resume </button>
                         </div>
                     </div>
