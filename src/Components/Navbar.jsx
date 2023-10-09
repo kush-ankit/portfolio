@@ -11,7 +11,7 @@ function Navbar() {
                 </div>
                 <div className='hidden md:flex gap-4'>
                     <div className='hover:animate-bounce cursor-pointer'><Link to="Home" smooth duration={500}>Home</Link></div>
-                    <div className='hover:animate-bounce cursor-pointer'><Link to="Skill" smooth duration={500}>Skills</Link></div>
+                    <div className='hover:animate-bounce cursor-pointer'><Link to="Techstack" smooth duration={500}>Techstack</Link></div>
                     <div className='hover:animate-bounce cursor-pointer'><Link to="Project" smooth duration={500}>Projects</Link></div>
                     <div className='hover:animate-bounce cursor-pointer'><Link to="Certificate" smooth duration={500}>Certificates</Link></div>
                 </div>

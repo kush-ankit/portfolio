@@ -1,6 +1,6 @@
 import Home from './Pages/Home'
 import Project from './Pages/Project'
-import Skills from './Pages/TechStacks'
+import TechStack from './Pages/TechStacks'
 import Certificates from './Pages/Certificates'
 import { useEffect, useState } from 'react'
 import Loading from './Components/Loading'
@@ -24,7 +24,7 @@ function App() {
       <>
         <Navbar />
         <Home />
-        <Skills />
+        <TechStack />
         <Project />
         <Certificates />
         <Contact />

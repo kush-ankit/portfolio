@@ -23,7 +23,7 @@ function Home() {
                         </div>
                         <div className='flex gap-8 items-baseline'>
                             <Link id='button' to="Contact" smooth duration={1500} className='cursor-pointer'> Contact me </Link>
-                            <button className='button'> Get Resume </button>
+                            <a href='https://i.ibb.co/Wct580X/resume.jpg' className='button' download={true} target='_blank' rel="noreferrer"> Get Resume </a>
                         </div>
                     </div>
                     <div className='flex gap-10'>
