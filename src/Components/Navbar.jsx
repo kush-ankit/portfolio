@@ -1,4 +1,5 @@
 import { Link } from 'react-scroll';
+import {HiMenu} from 'react-icons/hi'
 import './Navbar.css';
 
 function Navbar() {
@@ -7,7 +8,7 @@ function Navbar() {
             <div className="w-full md:h-full px-6 md:px-[6rem] flex justify-between items-center">
                 <img id='logoimage' src="https://i.ibb.co/GVYVn4w/image-removebg-preview.png" alt="Logon" className="h-14 md:h-24" />
                 <div className='md:hidden'>
-                    hello
+                    <HiMenu size={30}/>
                 </div>
                 <div className='hidden md:flex gap-4'>
                     <div className='hover:animate-bounce cursor-pointer'><Link to="Home" smooth duration={500}>Home</Link></div>

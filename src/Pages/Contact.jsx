@@ -27,7 +27,7 @@ function Contact() {
               </div>
             </div>
           </div>
-          <div className="w-full">
+          <div className="w-full pb-4">
             <div className="w-full h-full flex justify-center items-center">
               <div className="  md:w-[406px] w-[250px] h-[250px] md:h-[406px] bg-cover rounded-full bg-[url('https://i.ibb.co/3d6ZSQD/Group-1-1.png')] flex justify-end items-center md:p-24 p-12">
                 <button className="bg-[#FFD500] md:p-4 rounded-full"><FiArrowUpRight size={50} color='white' /></button>
@@ -35,8 +35,8 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className="p-8">
-          <footer className="flex justify-around border-t-4 p-4 border-black">
+        <div className="md:p-8">
+          <footer className="flex flex-col md:flex-row justify-around border-t-4 p-4 border-black">
             <span>&copy; 2021 All rights Reserved</span>
             <span>Designed By Ankit Kushwaha</span>
             <a href="mailto:er.ankitkush@gmail.com">er.ankitKushwaha@gmail.com</a>
