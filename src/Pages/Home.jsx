@@ -14,7 +14,7 @@ function Home() {
                 <div className="md:h-[40rem]  md:w-[50%] flex flex-col justify-evenly items-center md:gap-4 gap-16 p-4">
                     <div className='space-y-8'>
                         <div >
-                            <div className="text-[#FF8C5B] text-lg font-bold">Namaste, I&apos;m</div>
+                            <div className="text-[#FF8C5B] text-lg font-bold">Namaste, I&apos;m hello</div>
                             <div className="text-black text-5xl md:text-7xl font-bold">
                                 Ankit Kushwaha
                             </div>
