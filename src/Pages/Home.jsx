@@ -15,8 +15,8 @@ function Home() {
                     <div className='space-y-8'>
                         <div >
                             <div className="text-[#FF8C5B] text-lg font-bold">Namaste, I&apos;m</div>
-                            <div className="text-black text-5xl md:text-7xl font-bold">
-                                Ankit Kushwaha
+                            <div className=" typewriter">
+                                <h1 className='text-black text-5xl md:text-7xl font-bold'>Ankit Kushwaha</h1>
                             </div>
                             <div className="text-[#FF8C5B] font-bold text-lg">Full Stack Web Developer</div>
                             <div className="text-sm text-gray-500 hidden md:flex">A passionate computer science student eager to innovate <br /> in web development and embrace cutting-edge technologies <br /> for  user-centric  solutions at the forefront of digital advancements.</div>
@@ -41,4 +41,4 @@ function Home() {
     )
 }
 
-export default Home
+export default Home;

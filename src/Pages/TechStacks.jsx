@@ -1,51 +1,226 @@
-import {BsFillArrowUpRightCircleFill} from 'react-icons/bs'
+
+const skillSet = [
+  {
+    image: 'https://www.smartsight.in/wp-content/uploads/2021/09/NodeJS.jpg',
+    tech: 'Node.js',
+    description: 'Node.js is use for creating backend services and api.',
+  },
+  {
+    image: 'https://media.licdn.com/dms/image/v2/C4E12AQFdVr18zUa17Q/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1624637761724?e=2147483647&v=beta&t=uOrqjZV7ZeSvE6euFcZVEuj-2yuec1FppjnE6IUYdzY',
+    tech: 'React.js',
+    description: 'React is a JavaScript library for building user interfaces.'
+  },
+  {
+    image: 'https://www.gtech.com.tr/wp-content/uploads/2020/09/mongodb-nedir-1.png',
+    tech: 'MongoDB',
+    description: 'MongoDB is a document database. It stores data in a type of JSON format called BSON.'
+  },
+  {
+    image: 'https://btech.id/media/images/Page/2023/07/07/postgres-2583895412',
+    tech: 'PostgreSQL',
+    description: 'PostgreSQL, an innovative data management system known for its reliability, robustness, and extensibility.'
+  },
+  {
+    image: 'https://miro.medium.com/v2/resize:fit:1400/1*i2fRBk3GsYLeUk_Rh7AzHw.png',
+    tech: 'Express.js',
+    description: 'Express is a fast, unopinionated, minimalist web framework for Node.js, providing a robust set of features for web and mobile applications.'
+  },
+  {
+    image: 'https://images.prismic.io/turing/652ec31afbd9a45bcec81965_Top_Features_in_Next_js_13_7f9a32190f.webp?auto=format,compress',
+    tech: 'Next.js',
+    description: 'Built on a foundation of fast, production-grade tooling ... React The library for web and native user interfaces.'
+  },
+  {
+    image: 'https://stage.digilabs.ai/wp-content/uploads/2023/10/C.png',
+    tech: 'C/C++',
+    description: 'C++ is still mostly a superset of C adding Object-Oriented Programming, Exception Handling, Templating, and a more extensive standard library.'
+  },
+  {
+    image: 'https://multishoring.com/wp-content/uploads/2024/04/JavaScript-Symbol.png',
+    tech: 'Javascript',
+    description: 'JavaScript (JS) is a lightweight interpreted (or just-in-time compiled) programming language with first-class functions.'
+  },
+  {
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYZqZkpMyiN2uSuT7GAf6JSkJ44YsZqoQHdw&s',
+    tech: 'Python',
+    description: 'Python is a high-level, general-purpose programming language.'
+  },
+  {
+    image: 'https://devsuhas.com/wp-content/uploads/2024/03/c-sharp.webp?w=1400',
+    tech: 'C#',
+    description: 'C# is a general-purpose high-level programming language supporting multiple paradigms.'
+  },
+  {
+    image: 'https://picperf.io/https://laravelnews.s3.amazonaws.com/images/tailwindcss-1633184775.jpg',
+    tech: 'TailwindCSS',
+    description: 'Tailwind CSS is a utility-first CSS framework that simplifies web development by providing a set of pre-designed utility classes.'
+  },
+  {
+    image: 'https://camo.githubusercontent.com/21bb8ae3629c4852404841252c65baa38426e4c0d01a68a0f7e6fd121d4649dc/68747470733a2f2f7777772e69696d2e66722f65636f6c652d7765622f77702d636f6e74656e742f75706c6f6164732f323031372f30312f48544d4c352e6a7067',
+    tech: 'HTML/CSS',
+    description: 'HTML/CSS are use to design web pages with animation and effects.'
+  },
+  {
+    image: 'https://cdn.prod.website-files.com/61ddd0b42c51f89b7de1e910/6697e5d70e6b50dbe5bbe3dd_6697e36f9a2e61c3f9a3c850_SQL.jpeg',
+    tech: 'SQL',
+    description: 'SQL is a standard language for storing, manipulating and retrieving data in databases.'
+  },
+  {
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3jKr69SWYqvcRDy_S_iC8Xb43tO9bs9kYzg&s',
+    tech: 'Git/GitHub',
+    description: 'Git is a popular version control system.'
+  },
+  {
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwBnbCVrQUxXmIED__a00_uoUcRcfm9lYjEg&s',
+    tech: 'TypeScript',
+    description: 'Git is a popular version control system.'
+  },
+  {
+    image: 'https://www.naukri.com/campus/career-guidance/wp-content/uploads/2024/04/machine-learning.jpg',
+    tech: 'Machine Learning',
+    description: 'Git is a popular version control system.'
+  },
+  {
+    image: 'https://blog.codewithdan.com/wp-content/uploads/2023/06/Docker-Logo.png',
+    tech: 'Docker',
+    description: 'Git is a popular version control system.'
+  },
+  {
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHa1RhkOPL02TH-ivInA_Kz3QYfknPu64o-A&s',
+    tech: 'Nginx',
+    description: 'Git is a popular version control system.'
+  },
+  {
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsh6fRo_ojjURNysq7gtmMC6vMQ2VtXwkFMQ&s',
+    tech: 'Kubernates',
+    description: 'Git is a popular version control system.'
+  },
+  {
+    image: 'https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png',
+    tech: 'AWS Cloud',
+    description: 'Git is a popular version control system.'
+  },
+  {
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyDx3_OUM1bnWi0qtZKE1x1dOujO0mUI_-pA&s',
+    tech: 'Jenkins',
+    description: 'Git is a popular version control system.'
+  },
+  {
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpx9z7r58lTJaYHnNxcyMAdeT2V9QOlwyRAg&s',
+    tech: 'Github Actions',
+    description: 'Git is a popular version control system.'
+  },
+  {
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9-ACU4grPxj2ej2PDdevf7RtqrQOOQegSfQ&s',
+    tech: 'Firebase',
+    description: 'Git is a popular version control system.'
+  },
+]
 
 function TechStacks() {
   return (
-    <div name='Techstack' className="bg-[#ffe14e]">
-      <div className="w-full h-full md:p-[3rem] px-4 py-8 bg-center bg-[url('https://i.ibb.co/58d2G7s/Component-1-3.png')]">
-        <div className="flex md:flex-row flex-col gap-8 md:gap-0">
-          <div className="w-[50%]">
-            <h1 className="font-bold md:text-7xl text-5xl bg-white outline outline-1 w-fit p-1">TechStacks <br /> Expert</h1>
-          </div>
-          <div className="md:w-[50%] ">
-            <div className="md:h-[150px] h-16 md:border-t-4 border-t-2 border-black  overflow-hidden flex items-center justify-between px-4 md:px-[4rem]">
-              <p className="md:text-[50px] text-xl font-bold">JavaScript</p>
-              <span><BsFillArrowUpRightCircleFill size={30} /></span>
-            </div>
-            <div className="md:h-[150px] h-16 md:border-t-4 border-t-2 border-black  overflow-hidden flex items-center justify-between px-4 md:px-[4rem]">
-              <p className="md:text-[50px] text-xl font-bold">C Language</p>
-              <span><BsFillArrowUpRightCircleFill size={30} /></span>
-            </div>
-            <div className="md:h-[150px] h-16 md:border-t-4 border-t-2 border-black  overflow-hidden flex items-center justify-between px-4 md:px-[4rem]">
-              <p className="md:text-[50px] text-xl font-bold">CSharp</p>
-              <span><BsFillArrowUpRightCircleFill size={30} /></span>
-            </div>
-            <div className="md:h-[150px] h-16 md:border-t-4 border-t-2 border-black  overflow-hidden flex items-center justify-between px-4 md:px-[4rem]">
-              <p className="md:text-[50px] text-xl font-bold">Reactjs</p>
-              <span><BsFillArrowUpRightCircleFill size={30} /></span>
-            </div>
-            <div className="md:h-[150px] h-16 md:border-t-4 border-t-2 border-black  overflow-hidden flex items-center justify-between px-4 md:px-[4rem]">
-              <p className="md:text-[50px] text-xl font-bold">Nodejs</p>
-              <span><BsFillArrowUpRightCircleFill size={30}  /></span>
-            </div>
-            <div className="md:h-[150px] h-16 md:border-t-4 border-t-2 border-black  overflow-hidden flex items-center justify-between px-4 md:px-[4rem]">
-              <p className="md:text-[50px] text-xl font-bold">Expressjs</p>
-              <span><BsFillArrowUpRightCircleFill size={30} /></span>
-            </div>
-            <div className="md:h-[150px] h-16 md:border-t-4 border-t-2 border-black  overflow-hidden flex items-center justify-between px-4 md:px-[4rem]">
-              <p className="md:text-[50px] text-xl font-bold">MongoDB</p>
-              <span><BsFillArrowUpRightCircleFill size={30} /></span>
-            </div>
-            <div className="md:h-[150px] h-16 md:border-t-4 border-t-2 border-black  overflow-hidden flex  items-center justify-between px-4 md:px-[4rem]">
-              <p className="md:text-[50px] text-xl font-bold">Python</p>
-              <span><BsFillArrowUpRightCircleFill size={30} /></span>
-            </div>
-          </div>
-        </div>
+    <div className=''>
+      <div name='Techstack' className="bg-[#ffe14e] grid grid-cols-6 gap-4">
+        {skillSet.map((skill, index) => {
+          return (
+            <TechStackCardComponent
+              key={index}
+              image={skill.image}
+              tech={skill.tech}
+              description={skill.description}
+            />
+          )
+        })}
       </div>
     </div>
   )
 }
 
 export default TechStacks
+
+
+import styled from 'styled-components';
+
+const TechStackCardComponent = ({ image, tech, description }) => {
+  return (
+    <StyledWrapper>
+      <div className="card m-auto">
+        <div className="bg">
+          <img className='w-full h-[100px]' src={image} alt={tech} />
+          <div className='p-2'>
+            <h2 className='text-3xl font-semibold'>{tech}</h2>
+            <p className='text-sm'>{description}</p>
+          </div>
+        </div>
+        <div className="blob"></div>
+      </div>
+    </StyledWrapper>
+  );
+}
+
+const StyledWrapper = styled.div`
+  .card {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    border-radius: 14px;
+    z-index: 1111;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    ;
+  }
+
+  .bg {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 190px;
+    height: 240px;
+    z-index: 2;
+    background: rgba(255, 255, 255, .95);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid white;
+  }
+
+  .blob {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+  }
+
+  @keyframes blob-bounce {
+    0% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+
+    25% {
+      transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+
+    50% {
+      transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+
+    75% {
+      transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+
+    100% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+  }`;
+
