@@ -16,7 +16,8 @@
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.16.0",
     "react-scroll": "^1.8.9",
-    "styled-components": "^6.1.13"
+    "styled-components": "^6.1.13",
+    "swiper": "^11.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
