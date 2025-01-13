@@ -7,7 +7,6 @@ import Loading from './Components/Loading'
 import './App.css'
 import Contact from './Pages/Contact'
 import Navbar from './Components/Navbar'
-import Testpage from './Pages/Testpage'
 
 
 
@@ -25,7 +24,7 @@ function App() {
       <>
         <Navbar />
         <Home />
-        <Testpage />
+        <TechStack />
         <Project />
         <Certificates />
         <Contact />

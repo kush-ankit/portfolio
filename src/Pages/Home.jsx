@@ -1,6 +1,7 @@
 import { Link } from 'react-scroll';
 import './Home.css'
 import { BsGithub, BsLinkedin, BsInstagram } from 'react-icons/bs';
+import Typewriter from 'typewriter-effect';
 
 
 function Home() {
@@ -12,13 +13,21 @@ function Home() {
                 </div>
 
                 <div className="md:h-[40rem]  md:w-[50%] flex flex-col justify-evenly items-center md:gap-4 gap-16 p-4">
-                    <div className='space-y-8'>
+                    <div className='space-y-8 w-[80%]'>
                         <div >
                             <div className="text-[#FF8C5B] text-lg font-bold">Namaste, I&apos;m</div>
-                            <div className=" typewriter">
-                                <h1 className='text-black text-5xl md:text-7xl font-bold'>Ankit Kushwaha</h1>
+                            <div>
+                                <h1 className='text-black text-5xl md:text-7xl font-bold'>
+                                    <Typewriter
+                                        options={{
+                                            strings: ['Ankit Kushwaha'],
+                                            autoStart: true,
+                                            loop: true,
+                                        }}
+                                    />
+                                </h1>
                             </div>
-                            <div className="text-[#FF8C5B] font-bold text-lg">Full Stack Web Developer</div>
+                            <div className="text-[#FF8C5B] font-bold text-lg">Full Stack Developer</div>
                             <div className="text-sm text-gray-500 hidden md:flex">A passionate computer science student eager to innovate <br /> in web development and embrace cutting-edge technologies <br /> for  user-centric  solutions at the forefront of digital advancements.</div>
                         </div>
                         <div className='flex gap-8 items-baseline'>
