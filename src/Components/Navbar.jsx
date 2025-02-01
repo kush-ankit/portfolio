@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <nav className="bg-white rounded-t-md">
             <div className="w-full md:h-full px-6 md:px-[6rem] flex justify-between items-center">
-                <img id='logoimage' src="https://i.ibb.co/GVYVn4w/image-removebg-preview.png" alt="Logon" className="h-14 md:h-24" />
+                <img id='' src="https://i.ibb.co/GVYVn4w/image-removebg-preview.png" alt="Logon" className="h-14 md:h-24 scale-150" />
                 <div className='md:hidden'>
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost btn-circle">

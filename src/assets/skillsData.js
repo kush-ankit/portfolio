@@ -125,3 +125,17 @@ export const language = [
         description: 'SQL is a standard language for storing, manipulating and retrieving data in databases.'
     },
 ]
+
+
+export const skills = [
+    {
+        image: "https://i.ibb.co/tcBw4yV/virtual-lab.gif",
+        name: "Computer Science",
+        level: '80'
+    },
+    {
+        image: "https://i.ibb.co/dm2yWYL/html.gif",
+        name: "Frontend Development",
+        level: '80'
+    }
+]
