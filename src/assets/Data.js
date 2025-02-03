@@ -33,15 +33,15 @@ export const skills = [
 
 export const projects = [
     {
-        image: "https://i.ibb.co/bBxySPZ/csi-srmcem-web-app.png",
-        name: "CSI-SRMCEM Website",
-        description: "A website for csi srmcem to show information and connect with students",
-        github: "https://github.com/kush-ankit/csiportal",
-        demo: "https://csi-srmcem.web.app/",
-        techstack: ["React", "NPM", "Canva", "Firebase", "TailwindCSS", "JavaScript", "HTML/CSS"]
+        image: "https://i.ibb.co/pr4SNFNP/Screenshot-2024-10-06-232749.png",
+        name: "Blog website",
+        description: "The application allows users to create and manage blogs.",
+        github: "https://github.com/kush-ankit/blog-mern",
+        demo: "https://my-bloggers.web.app/",
+        techstack: ["React", "NPM", "Canva", "Firebase", "TailwindCSS", "JavaScript", "HTML/CSS", "MongoDB", "Express", "Node"]
     },
     {
-        image: "https://i.ibb.co/XJmMMtr/screencapture-localhost-5173-2023-10-07-19-48-59.png",
+        image: "https://i.ibb.co/4Rj4yTmS/Screenshot-2025-02-03-193159.png",
         name: "Portfolio Website",
         description: "Website to show information and achievements of a person",
         github: "https://github.com/kush-ankit/portfolio",
@@ -49,12 +49,44 @@ export const projects = [
         techstack: ["React", "NPM", "Canva", "Firebase", "TailwindCSS", "JavaScript", "HTML/CSS", "React icons"]
     },
     {
-        image: "https://i.ibb.co/M1Gvdw5/Screenshot-20221217-131511.png",
-        name: "Quiz Test",
-        description: "A web app to attempt quiz and improve knowledge and expertise in any domain",
-        github: "#",
+        image: "#",
+        name: "FitBharat",
+        description: "A mobile based application to track and manage fitness data and plans.",
+        github: "https://github.com/kush-ankit/fitbharat",
         demo: "#",
-        techstack: ["Jquery", "Canva", "TailwindCSS", "JavaScript", "HTML/CSS"]
+        techstack: ["React Native", "Zustand", "Android", "Nodejs", "NPM", "Canva", "Firebase", "TailwindCSS", "JavaScript", "HTML/CSS"]
+    },
+    {
+        image: "https://i.ibb.co/67g8343V/Screenshot-2025-02-03-175932.png",
+        name: "Mobile Price Prediction",
+        description: "A Machine learning model to predict the price of mobile based on the features.",
+        github: "https://github.com/kush-ankit/mobile_price_prediction",
+        demo: "https://mobile-price-pred.streamlit.app/",
+        techstack: ["Python", "venv", "Canva", "Streamlit", "linear Regression", "Random Forest", "pandas", "scikitlearn"]
+    },
+    {
+        image: "#",
+        name: "Realtime Chat App",
+        description: "This is a real time chat application build on sockets and web servers based technologies.",
+        github: "https://github.com/kush-ankit/Realtime-chat-app",
+        demo: "#",
+        techstack: ["socket.io", "Zustand", "React", "NPM", "Canva", "Firebase", "TailwindCSS", "JavaScript", "HTML/CSS"]
+    },
+    {
+        image: "https://i.ibb.co/WNxftjcX/Screenshot-2025-02-03-193328.png",
+        name: "CSI-SRMCEM Website",
+        description: "A website for csi srmcem to show information and connect with students",
+        github: "https://github.com/kush-ankit/csiportal",
+        demo: "https://csi-srmcem.web.app/",
+        techstack: ["React", "NPM", "Canva", "Firebase", "TailwindCSS", "JavaScript", "HTML/CSS"]
+    },
+    {
+        image: "#",
+        name: "Quizee",
+        description: "Quiz hosting platform where you can create rooms and multiple students can join.",
+        github: "https://github.com/kush-ankit/Quiz-portal",
+        demo: "#",
+        techstack: ["React", "NPM", "Canva", "Firebase", "TailwindCSS", "JavaScript", "HTML/CSS", "MongoDB", "Nextjs", "Node"]
     },
     {
         image: "https://i.ibb.co/BG0gvhb/screencapture-myonlinetodoapp-web-app-2023-10-07-19-51-29.png",
@@ -65,11 +97,27 @@ export const projects = [
         techstack: ["React", "NPM", "Canva", "Firebase", "TailwindCSS", "JavaScript", "HTML/CSS", "Zustand", "localStorage"]
     },
     {
-        image: "https://i.ibb.co/bBxySPZ/csi-srmcem-web-app.png",
-        name: "CSI-SRMCEM Website",
-        description: "A website for csi srmcem to show information and connect with students",
-        github: "https://github.com/kush-ankit/csiportal",
-        demo: "https://csi-srmcem.web.app/",
-        techstack: ["React", "NPM", "Canva", "Firebase", "TailwindCSS", "JavaScript", "HTML/CSS"]
+        image: "https://i.ibb.co/M1Gvdw5/Screenshot-20221217-131511.png",
+        name: "Quiz Test",
+        description: "A web app to attempt quiz and improve knowledge and expertise in any domain",
+        github: "#",
+        demo: "#",
+        techstack: ["Jquery", "Canva", "TailwindCSS", "JavaScript", "HTML/CSS"]
+    },
+    {
+        image: "#",
+        name: "TicTakToe",
+        description: "Android app to play tictaktoe build in Android studio with JAVA.",
+        github: "https://github.com/kush-ankit/TicTakToe-App",
+        demo: "#",
+        techstack: ["Android", "Android Studio", "JAVA", "JDK", "XML", "Kotlin"]
+    },
+    {
+        image: "#",
+        name: "Auth Manager",
+        description: "MERN application to simulate login and signup processes.",
+        github: "https://github.com/kush-ankit/Auth-fullstack",
+        demo: "#",
+        techstack: ["React", "Zustand", "NPM", "Nodejs", "mongoDB", "Canva", "Firebase", "TailwindCSS", "JavaScript", "HTML/CSS"]
     }
 ]

@@ -1,27 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-  font-family: 'Gabarito', cursive;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
   color: #242424;
   background-color: #ff8c5b;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
 
-body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-
-}
 
 @media (prefers-color-scheme: light) {
   :root {

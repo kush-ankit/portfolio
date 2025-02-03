@@ -11,7 +11,7 @@ function Skills() {
 
   return (
     <div className='h-full w-full'>
-      <div name='Techstack' className="bg-[#ffe14e] h-full w-full flex flex-col md:flex-row md:p-6 p-2">
+      <div name='Techstack' className="bg-[#ffe14e] h-full w-full flex flex-col md:flex-row md:p-6 md:px-[6rem] p-2">
         <section className="w-full h-full md:p-0">
           <h1 className="md:text-8xl text-5xl font-bold outline-2 outline outline-gray-500 bg-white flex justify-center">Skills</h1>
           <div className="md:pt-4 pt-2 md:space-y-2 space-y-1">
