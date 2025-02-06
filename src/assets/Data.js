@@ -121,3 +121,64 @@ export const projects = [
         techstack: ["React", "Zustand", "NPM", "Nodejs", "mongoDB", "Canva", "Firebase", "TailwindCSS", "JavaScript", "HTML/CSS"]
     }
 ]
+
+
+export const certificates = [
+    {
+        name: "Data Science 101",
+        institution: "Cognitive class",
+        year: 2022,
+        image: "https://i.ibb.co/3Yfk275/sscertifica.jpg",
+        link: "https://courses.cognitiveclass.ai/certificates/751ea8cd01894d319a76040c4d625940"
+    },
+    {
+        name: "Build Your Own Chatbot",
+        institution: "IBM",
+        year: 2022,
+        image: "https://i.ibb.co/1LxhpFm/certifi.jpg",
+        link: "https://courses.cognitiveclass.ai/certificates/a4bb2667740f4fe0909714a772f6e467"
+    },
+    {
+        name: "Cloud Core",
+        institution: "IBM",
+        year: 2022,
+        image: "https://i.ibb.co/546wkjs/Cloud-Core-Badge20220920-46-y4rcwq.jpg",
+        link: "https://www.credly.com/go/puKV6toX"
+    }
+    ,
+    {
+        name: "Python",
+        institution: "Guvi",
+        year: 2023,
+        image: "https://i.ibb.co/wshgHM9/Guvi-Certification-299618t0s-Z8-S5-U2-X1-G.png",
+        link: "https://www.guvi.in/certificate?id=299618t0sZ8S5U2X1G"
+    },
+    {
+        name: "AI for India 2.0",
+        institution: "Skill India",
+        year: 2023,
+        image: "https://i.ibb.co/SNpGgMv/Guvi-Certification-D0-P1196-Bz26gdc02-M1.png",
+        link: "#"
+    },
+    {
+        name: "Machine Learning with Python",
+        institution: "IBM",
+        year: 2023,
+        image: "https://i.ibb.co/br9HqrF/IBM-ML0101-EN-Certificate-Cognitive-Class.jpg",
+        link: "https://courses.cognitiveclass.ai/certificates/75ddb780065241559778ec3aab895b99"
+    },
+    {
+        name: "C#:Basic to Professional",
+        institution: "Udemy",
+        year: 2023,
+        image: "https://i.ibb.co/fStDrFb/UC-1bbb3170-6875-4eae-a558-83b7512dfe80.jpg",
+        link: "https://www.udemy.com/certificate/UC-1bbb3170-6875-4eae-a558-83b7512dfe80/"
+    },
+    {
+        name: "Artificial Intelligence Fundamentals",
+        institution: "IBM SkillsBuild",
+        year: 2024,
+        image: "https://i.ibb.co/tTQgv1y4/Screenshot-2025-02-06-192111.png",
+        link: "https://www.credly.com/go/y5Seuc2k"
+    }
+]

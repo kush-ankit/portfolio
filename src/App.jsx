@@ -11,7 +11,7 @@ import Skills from './Pages/Skills'
 
 
 function App() {
-
+  
   const [ready, setReady] = useState(false)
 
   useEffect(() => {

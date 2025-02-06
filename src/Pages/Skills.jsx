@@ -11,7 +11,7 @@ function Skills() {
 
   return (
     <div className='h-full w-full'>
-      <div name='Techstack' className="bg-[#ffe14e] h-full w-full flex flex-col md:flex-row md:p-6 md:px-[6rem] p-2">
+      <div name='Techstack' className="bg-[#ffe14e] h-full w-full flex flex-col md:flex-row md:p-6 md:px-[6rem] p-2 pt-4">
         <section className="w-full h-full md:p-0">
           <h1 className="md:text-8xl text-5xl font-bold outline-2 outline outline-gray-500 bg-white flex justify-center">Skills</h1>
           <div className="md:pt-4 pt-2 md:space-y-2 space-y-1">
@@ -19,7 +19,7 @@ function Skills() {
               skills.map((skill, index) => (
                 <div key={index} className='w-full bg-white rounded-md border border-gray-800 overflow-hidden flex justify-between items-center md:px-2 px-1'>
                   <span className="flex md:gap-4 gap-2 md:py-[9px] py-1">
-                    <img src={skill.image} alt={skill.name} className="h-[55px] w-[55px] rounded-full" />
+                    <img src={skill.image} alt={skill.name} loading="lazy" className="h-[55px] w-[55px] rounded-full" />
                     <p className='text-lg font-bold flex justify-center items-center'>{skill.name}</p>
                   </span>
                   <p>{skill.level}</p>
