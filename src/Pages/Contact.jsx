@@ -10,7 +10,7 @@ function Contact() {
         <section>
           <div className="md:text-8xl text-5xl p-1 font-bold outline-2 outline outline-gray-500 bg-[#ffe14e]">Contact us</div>
         </section>
-        <section className='h-full w-full rounded-md shadow-2xl flex md:flex-row flex-col justify-center items-center bg-[#ffe14e] border-2 border-black'>
+        <section className='h-full w-full rounded-md shadow-2xl flex md:flex-row flex-col justify-center items-center md:bg-[#ffe14e] md:border-2 border-black'>
           <div className='w-1/2 h-full rounded-l-md md:flex  justify-center items-center hidden '>
             <div className='md:h-[80%] md:w-[80%]'>
               <div className='md:h-1/3 w-fit flex flex-col justify-evenly gap-2'>
@@ -31,29 +31,36 @@ function Contact() {
                   <div className='pl-5 hover:text-blue-500'>Siswa Dixit, Salempur, Deoria, UP </div>
                 </div>
               </div>
-              
+
             </div>
           </div>
           <div className='md:w-1/2 w-full h-full rounded-r-md md:p-10 backdrop-blur-lg md:backdrop-blur-none'>
-            <div className='h-full w-full  flex justify-center items-center md:bg-white bg-[#ffe14e] rounded-md border border-black'>
+            <div className='h-full w-full flex justify-center items-center md:bg-white bg-[#ffe14e] rounded-md border border-black hover:scale-105 duration-200'>
               <div className='w-full h-full p-4'>
                 <form action="" method="POST">
                   <p className='pt-3'>Your Name</p>
-                  <input name='Name' type="text" placeholder='Fullname' className='w-full p-2 border-2 bg-slate-200 hover:border-blue-500 outline-none rounded-md' />
+                  <input name='Name' type="text" placeholder='Fullname' className='w-full p-2 outline-none rounded-md border border-black hover:bg-slate-100' />
                   <p className='pt-3'>Your Email</p>
-                  <input name='email' type="text" placeholder='Email' className='w-full p-2 border-2 bg-slate-200 rounded-md hover:border-blue-500 outline-none' />
+                  <input name='email' type="text" placeholder='Email' className='w-full p-2 rounded-md outline-none border border-black hover:bg-slate-100' />
                   <p className='pt-3'>Comment here</p>
-                  <textarea name="Description" id="Desc" cols="30" rows="5" placeholder='Comment' className='w-full p-1  border-2 bg-slate-200 rounded-md hover:border-blue-500 outline-none' ></textarea>
+                  <textarea name="Description" id="Desc" cols="30" rows="5" placeholder='Comment' className='w-full p-1 rounded-md outline-none border border-black hover:bg-slate-100' ></textarea>
                   <div className='h-full w-full py-2'>
-                    <button type='submit' className='bg-white border border-black py-2 px-5 rounded-md hover:bg-slate-200 duration-200 '>Submit</button>
+                    <button type='submit' className='bg-white border border-black py-2 px-5 rounded-md hover:bg-slate-100 duration-200 '>Submit</button>
                   </div>
                 </form>
               </div>
             </div>
           </div>
         </section >
+        <footer className='md:py-4 py-2'>
+          <div className="flex flex-col md:flex-row justify-around border-t-2 border-black md:py-4 py-2">
+            <span className='hidden md:block'>&copy; 2024 All rights Reserved</span>
+            <span>Designed By Ankit Kushwaha</span>
+            <span className='hidden md:block'>er.ankitKushwaha@gmail.com</span>
+          </div>
+        </footer>
       </div>
-    </div >
+    </div>
   )
 }
 

@@ -15,12 +15,14 @@ export default function Project() {
         <section className="w-full h-full flex flex-wrap md:gap-6 gap-2">
           {
             certificates.slice().reverse().slice(0, showMore ? certificates.length : 5).map((certificate, index) => (
-              <div key={index} className='md:w-[32%] w-full bg-white rounded-md border border-gray-800 overflow-hidden px-4 py-2'>
+              <div key={index} className='md:w-[32%] w-full bg-white rounded-md border border-gray-800 overflow-hidden px-4 py-2 hover:scale-105 duration-200'>
                 <div className="flex justify-between items-center p-2">
-                  <h2 className='text-2xl font-bold'>{certificate.name}</h2>
-                  <button className="text-sm bg-gray-700 text-white p-1 px-2 rounded-full">By {certificate.institution}</button>
+                  <h2 className='md:text-2xl text-md font-bold'>{certificate.name}</h2>
+                  <button className="text-xs bg-gray-700 text-white p-1 px-2 rounded-full">By {certificate.institution}</button>
                 </div>
-                <img src={certificate.image} alt="project" loading="lazy" className="rounded-md h-[15rem] w-full" />
+                <div className="w-full flex justify-center">
+                  <img src={certificate.image} alt="project" loading="lazy" className="rounded-md md:h-[15rem] h-[10rem] " />
+                </div>
                 <div className="flex justify-end items-center py-2">
                   <a href={certificate.link} target="_blank" rel="noreferrer" className="border border-black px-4 py-2 rounded-md bg-white flex gap-2 items-center">View Project <FaExternalLinkAlt /></a>
                 </div>

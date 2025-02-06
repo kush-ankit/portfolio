@@ -15,7 +15,7 @@ export default function Project() {
         <section className="w-full h-full flex flex-wrap md:gap-6 gap-2">
           {
             projects.slice(0, !showMore ? 5 : certificates.length).map((project, index) => (
-              <div key={index} className='md:w-[32%] w-full bg-[#ffe14e] rounded-md border border-gray-800 overflow-hidden px-4 py-2'>
+              <div key={index} className='md:w-[32%] w-full bg-[#ffe14e] rounded-md border border-gray-800 overflow-hidden px-4 py-2 hover:scale-105 duration-200'>
                 <div className="flex justify-between items-center">
                   <h2 className='text-2xl font-bold'>{project.name}</h2>
                   <button className="text-sm bg-gray-700 text-white p-1 px-2 rounded-full">Website</button>
