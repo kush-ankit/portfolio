@@ -1,10 +1,10 @@
 import { FaAngleDown, FaAngleUp, FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import { projects } from "../assets/Data";
+import { certificates, projects } from "../assets/Data";
 import { useState } from "react";
 
 
 export default function Project() {
-  const [showMore, setShowMore] = useState(6)
+  const [showMore, setShowMore] = useState(false)
 
   return (
     <div name='Project' className="bg-white md:py-[1rem] md:px-[6rem] p-2 pt-4">
@@ -12,9 +12,9 @@ export default function Project() {
         <section>
           <div className="md:text-8xl text-5xl p-1 font-bold outline-2 outline outline-gray-500 bg-[#ffe14e]">Latest Projects</div>
         </section>
-        <section className="w-full h-full flex flex-wrap justify-between md:gap-6 gap-2">
+        <section className="w-full h-full flex flex-wrap md:gap-6 gap-2">
           {
-            projects.slice(0, showMore).map((project, index) => (
+            projects.slice(0, !showMore ? 5 : certificates.length).map((project, index) => (
               <div key={index} className='md:w-[32%] w-full bg-[#ffe14e] rounded-md border border-gray-800 overflow-hidden px-4 py-2'>
                 <div className="flex justify-between items-center">
                   <h2 className='text-2xl font-bold'>{project.name}</h2>
@@ -36,7 +36,7 @@ export default function Project() {
             ))
           }
           <div className="w-full h-full flex justify-center items-center">
-            <button onClick={() => setShowMore(showMore == 6 ? projects.length : 6)} className="w-full h-full border-2 border-gray-800 flex items-center justify-center gap-3 p-2 bg-white">{showMore != 6 ? `Show less` : `Show more`} {showMore == 6 ? <FaAngleDown /> : <FaAngleUp />}</button>
+            <button onClick={() => setShowMore(!showMore)} className="w-full h-full border-2 border-gray-800 flex items-center justify-center gap-3 p-2 bg-[#ffe14e] font-semibold">{showMore ? `Show less` : `Show more`} {!showMore ? <FaAngleDown /> : <FaAngleUp />}</button>
           </div>
         </section>
       </div>
