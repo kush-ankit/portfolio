@@ -1,7 +1,6 @@
 import { FaAngleDown, FaAngleUp, FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import { certificates, projects } from "../assets/Data";
+import { projects } from "../assets/Data";
 import { useState } from "react";
-
 
 export default function Project() {
   const [showMore, setShowMore] = useState(false)
@@ -14,18 +13,18 @@ export default function Project() {
         </section>
         <section className="w-full h-full flex flex-wrap md:gap-6 gap-2">
           {
-            projects.slice(0, !showMore ? 5 : certificates.length).map((project, index) => (
+            projects.slice(0, !showMore ? 5 : projects.length).map((project, index) => (
               <div key={index} className='md:w-[32%] w-full bg-[#ffe14e] rounded-md border border-gray-800 overflow-hidden px-4 py-2 hover:scale-105 duration-200'>
                 <div className="flex justify-between items-center">
                   <h2 className='text-2xl font-bold'>{project.name}</h2>
-                  <button className="text-sm bg-gray-700 text-white p-1 px-2 rounded-full">Website</button>
+                  <button className="text-sm bg-gray-700 text-white p-1 px-2 rounded-full">{project.type}</button>
                 </div>
                 <div className="flex flex-wrap gap-2 py-2">
-                  <button className="text-sm bg-[#fdfbd4] p-1 px-2 rounded-full">MERN</button>
-                  <button className="text-sm bg-[#bdb96a] p-1 px-2 rounded-full">API</button>
-                  <button className="text-sm bg-[#c1bfff] p-1 px-2 rounded-full">Server</button>
-                  <button className="text-sm bg-orange-500 p-1 px-2 rounded-full">VSCode</button>
-                  <button className="text-sm bg-[#caf1de] p-1 px-2 rounded-full">Web Development</button>
+                  {
+                    project.techstack.map((tech, index) => (
+                      <button key={index} className={`text-sm p-1 px-2 rounded-full bg-white`}>{tech}</button>
+                    ))
+                  }
                 </div>
                 <img src={project.image} alt="project" loading="lazy" className="rounded-md" />
                 <div className="flex justify-between items-center py-2">

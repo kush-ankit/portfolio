@@ -35,6 +35,7 @@ export const projects = [
     {
         image: "https://i.ibb.co/pr4SNFNP/Screenshot-2024-10-06-232749.png",
         name: "Blog website",
+        type: "Full stack",
         description: "The application allows users to create and manage blogs.",
         github: "https://github.com/kush-ankit/blog-mern",
         demo: "https://my-bloggers.web.app/",
@@ -43,6 +44,7 @@ export const projects = [
     {
         image: "https://i.ibb.co/4Rj4yTmS/Screenshot-2025-02-03-193159.png",
         name: "Portfolio Website",
+        type: "frontend",
         description: "Website to show information and achievements of a person",
         github: "https://github.com/kush-ankit/portfolio",
         demo: "https://kush-ankit.web.app/",
@@ -51,6 +53,7 @@ export const projects = [
     {
         image: "#",
         name: "FitBharat",
+        type: "Mobile App",
         description: "A mobile based application to track and manage fitness data and plans.",
         github: "https://github.com/kush-ankit/fitbharat",
         demo: "#",
@@ -59,6 +62,7 @@ export const projects = [
     {
         image: "https://i.ibb.co/67g8343V/Screenshot-2025-02-03-175932.png",
         name: "Mobile Price Prediction",
+        type: "ML Model",
         description: "A Machine learning model to predict the price of mobile based on the features.",
         github: "https://github.com/kush-ankit/mobile_price_prediction",
         demo: "https://mobile-price-pred.streamlit.app/",
@@ -67,6 +71,7 @@ export const projects = [
     {
         image: "#",
         name: "Realtime Chat App",
+        type: "Full stack",
         description: "This is a real time chat application build on sockets and web servers based technologies.",
         github: "https://github.com/kush-ankit/Realtime-chat-app",
         demo: "#",
@@ -75,6 +80,7 @@ export const projects = [
     {
         image: "https://i.ibb.co/WNxftjcX/Screenshot-2025-02-03-193328.png",
         name: "CSI-SRMCEM Website",
+        type: "Frontend",
         description: "A website for csi srmcem to show information and connect with students",
         github: "https://github.com/kush-ankit/csiportal",
         demo: "https://csi-srmcem.web.app/",
@@ -83,6 +89,7 @@ export const projects = [
     {
         image: "#",
         name: "Quizee",
+        type: "Nextjs",
         description: "Quiz hosting platform where you can create rooms and multiple students can join.",
         github: "https://github.com/kush-ankit/Quiz-portal",
         demo: "#",
@@ -91,6 +98,7 @@ export const projects = [
     {
         image: "https://i.ibb.co/BG0gvhb/screencapture-myonlinetodoapp-web-app-2023-10-07-19-51-29.png",
         name: "Online ToDo App",
+        type: "Frontend",
         description: "A web based todo application that run in you browser and parsist data for long time.",
         github: "https://github.com/kush-ankit/todos-localstorage",
         demo: "https://myonlinetodoapp.web.app/",
@@ -99,6 +107,7 @@ export const projects = [
     {
         image: "https://i.ibb.co/M1Gvdw5/Screenshot-20221217-131511.png",
         name: "Quiz Test",
+        type: "jQuery",
         description: "A web app to attempt quiz and improve knowledge and expertise in any domain",
         github: "#",
         demo: "#",
@@ -107,6 +116,7 @@ export const projects = [
     {
         image: "#",
         name: "TicTakToe",
+        type: "Android",
         description: "Android app to play tictaktoe build in Android studio with JAVA.",
         github: "https://github.com/kush-ankit/TicTakToe-App",
         demo: "#",
@@ -115,6 +125,7 @@ export const projects = [
     {
         image: "#",
         name: "Auth Manager",
+        type: "Full stack",
         description: "MERN application to simulate login and signup processes.",
         github: "https://github.com/kush-ankit/Auth-fullstack",
         demo: "#",
